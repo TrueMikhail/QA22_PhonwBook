@@ -1,4 +1,4 @@
-package com.ait.phonebook.fw;
+package com.ait.tests.fw;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

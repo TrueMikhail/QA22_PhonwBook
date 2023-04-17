@@ -1,7 +1,7 @@
-package com.ait.phonebook;
+package com.ait.tests;
 
-import com.ait.phonebook.model.Contact;
-import com.ait.phonebook.model.User;
+import com.ait.tests.model.Contact;
+import com.ait.tests.model.User;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -19,7 +19,6 @@ public class RemoveContactTests extends TestBase {
                     .setPassword("JJghfds!1452"));
             app.getUser().clickOnLoginButton();
             app.getHeader().clickOnAddLink();
-            //fill add contact form
             app.getContact().addContact(new Contact()
                     .setName("Karl")
                     .setSurName("Adam")
@@ -28,7 +27,6 @@ public class RemoveContactTests extends TestBase {
                     .setAdress("Koblenz")
                     .setDescription("torwart"));
 
-            //click on Save button
             app.getContact().clickOnSaveButton();
 
         }

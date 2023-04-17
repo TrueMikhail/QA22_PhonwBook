@@ -1,4 +1,4 @@
-package com.ait.phonebook.model;
+package com.ait.tests.model;
 
 public class Contact {
     private String name;

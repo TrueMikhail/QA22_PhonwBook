@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ait.tests.HomePageTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-17T16:30:10" hostname="DESKTOP-5TFRG45" time="0.022">
+  <properties/>
+  <testcase name="openHomePageTest" classname="com.ait.tests.HomePageTests" time="0.022"/>
+  <system-out><![CDATA[19:30:10.265 [Test worker] INFO  com.ait.tests.TestBase -- Start test openHomePageTestwith data: []
+19:30:10.290 [Test worker] INFO  com.ait.tests.TestBase -- PASSEDopenHomePageTest
+19:30:10.290 [Test worker] INFO  com.ait.tests.TestBase -- ==========================================
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,6 +1,6 @@
-package com.ait.phonebook;
+package com.ait.tests;
 
-import com.ait.phonebook.model.User;
+import com.ait.tests.model.User;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -15,47 +15,34 @@ public class LoginTest extends TestBase {
 
     @Test(priority = 1)
     public void loginRegisteredUserPositiveTest() {
-        //click on Login link
         app.getHeader().clickOnLoginLink();
-        //verify Registration form is displayed
         Assert.assertTrue(app.getUser().isLoginRegFormPresent());
-        //fill registration form
         app.getUser().fillLoginRegForm(new User()
                 .setEmail("asd+1@gm.com")
                 .setPassword("JJghfds!1452"));
-        //click on Login button
         app.getUser().clickOnLoginButton();
-        //verify User logged in
         Assert.assertTrue(app.getHeader().isSignOutButtonPresent());
     }
 
     @Test (priority = 2)
     public void loginRegisteredUserWithInvalidPasswordNegativeTest() {
-        //click on Login link
         app.getHeader().clickOnLoginLink();
-        //verify Registration form is displayed
         Assert.assertTrue(app.getUser().isLoginRegFormPresent());
-        //fill registration form
         app.getUser().fillLoginRegForm(new User()
                 .setEmail("manuel+5@gmail.com")
                 .setPassword("Manuel12345"));
-        //click on Login button
         app.getUser().clickOnLoginButton();
-        //check alert is appeared
         Assert.assertTrue(app.getUser().isAlertPresent());
+        logger.info("User is logged in. Actual result: " + app.getHeader().isSignOutButtonPresent() + ". Expected result: true");
     } @Test (priority = 2)
     public void loginRegisteredUserWithoutPasswordNegativeTest() {
-        //click on Login link
         app.getHeader().clickOnLoginLink();
-        //verify Registration form is displayed
         Assert.assertTrue(app.getUser().isLoginRegFormPresent());
-        //fill registration form
         app.getUser().fillLoginRegForm(new User()
                 .setEmail("manuel+5@gmail.com"));
-        //click on Login button
         app.getUser().clickOnLoginButton();
-        //check alert is appeared
         Assert.assertTrue(app.getUser().isAlertPresent());
+        //logger.info("User is logged in. Actual result: " + app.getHeader().isAlertPresent() + ". Expected result: true");
     }
 
 }

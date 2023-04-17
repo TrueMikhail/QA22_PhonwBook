@@ -1,6 +1,6 @@
-package com.ait.phonebook.fw;
+package com.ait.tests.fw;
 
-import com.ait.phonebook.model.User;
+import com.ait.tests.model.User;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 

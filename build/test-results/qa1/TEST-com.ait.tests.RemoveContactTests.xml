@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ait.tests.RemoveContactTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-17T16:30:12" hostname="DESKTOP-5TFRG45" time="1.658">
+  <properties/>
+  <testcase name="removeContactTest" classname="com.ait.tests.RemoveContactTests" time="1.658"/>
+  <system-out><![CDATA[19:30:10.294 [Test worker] INFO  com.ait.tests.TestBase -- Start test removeContactTestwith data: []
+15
+14
+19:30:14.015 [Test worker] INFO  com.ait.tests.TestBase -- PASSEDremoveContactTest
+19:30:14.017 [Test worker] INFO  com.ait.tests.TestBase -- ==========================================
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
